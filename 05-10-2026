@@ -1,1 +1,45 @@
+----->>>>>>>Notes:
+   transitions:
+    Transitions enable you to define the transitions between two states of an element.
+    transition-property: font-size, width, etc
+    transition-duration: 2s,4ms...
+    transition-timing-function: ease-in/ ease-out, linear, steps,..
+    transition-delay:2s,4ms,..
 
+css tranform:
+    Used to apply 2D & 3D transformations to an element.
+    rotate transform:rotate(45deg);
+
+
+--->>>>>>Index.html:
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>Hello</div>
+</body>
+</html>
+
+
+----->>>>>>style.css:
+div{
+    height:200px;
+    width:200px;
+    background-color: aquamarine;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 2s;
+}
+div:hover{
+    background-color: aqua;
+    font-size: 200px;
+}
+div:active{
+    background-color: gold;
+}
